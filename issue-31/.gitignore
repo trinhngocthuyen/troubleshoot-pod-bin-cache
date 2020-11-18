@@ -1,9 +1,10 @@
 .DS_Store
 xcschememanagement.plist
 Pods
+LibsCache
 .xcworkspacedata
-*.xcworkspace
-*.xcodeproj/project.xcworkspace/xcshareddata
+Example.xcworkspace
+Example.xcodeproj/project.xcworkspace/xcshareddata
 UserInterfaceState.xcuserstate
 xcuserdata/
 
@@ -14,16 +15,6 @@ DerivedData/
 ## Bundle
 .bundle/
 bin/
-
-## Various settings
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
 
 ## Other
 *.moved-aside
@@ -49,11 +40,9 @@ playground.xcworkspace
 # Package.pins
 .build/
 
-# ---------------------------------------
+# --------------------------------
 # cocoapods-binary-cache
-_Prebuilt/
-_Prebuild/
 _Prebuild_delta/
-# ---------------------------------------
-
-prebuilt-frameworks/
+_Prebuild/
+_Prebuilt/
+# --------------------------------

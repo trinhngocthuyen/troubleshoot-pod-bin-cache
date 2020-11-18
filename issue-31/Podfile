@@ -1,0 +1,27 @@
+platform :ios, "12.0"
+use_frameworks!
+
+source "https://cdn.cocoapods.org/"
+
+plugin "cocoapods-binary-cache"
+
+config_cocoapods_binary_cache(
+  cache_repo: {
+    "default" => {
+      "local" => "prebuilt-frameworks"
+    }
+  }
+)
+
+target "Example" do
+  pod "RealmSwift", "10.1.0"
+  pod "AppAuth",  "1.4.0", :binary => true
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      # config.build_settings["CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES"] = "YES"
+    end
+  end
+end
