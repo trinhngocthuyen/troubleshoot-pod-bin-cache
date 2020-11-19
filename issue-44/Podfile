@@ -1,0 +1,81 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+plugin "cocoapods-binary-cache"
+use_frameworks!
+
+config_cocoapods_binary_cache(
+  cache_repo: {
+    "default" => {
+      "local" => "prebuilt-frameworks"
+    }
+  },
+  prebuild_config: "Debug"
+)
+
+
+def binary_pod(name, *args)
+  pod name, args, :binary => true
+end
+
+
+pod 'Resolver'
+
+
+target 'Example' do
+  pod 'SimulatorStatusMagic', :configurations => ['Release', 'Debug']
+  pod 'netfox', :configurations => ['Release', 'Debug']
+
+  binary_pod 'LifetimeTracker', '1.8.0'
+  binary_pod 'MaterialComponents/Ink', '88.0.1'
+  pod 'IGListKit', '4.0.0'
+  binary_pod 'SCPageViewController', '2.0.14'
+
+  # Crash Reporting / Test Build Upload
+  pod 'AppCenter', '4.0.0'
+
+  # Logger
+  binary_pod 'CocoaLumberjack/Swift', '3.6.0'
+  
+  # Progress Hud
+  binary_pod 'SVProgressHUD', '2.2.5'
+  
+  # Autolayout in Code
+  binary_pod 'SnapKit', '~> 5.0.1'
+
+  # NSUserDefaults Helper
+  binary_pod 'SwiftyUserDefaults', '4.0.0'
+  
+  #Date Handling
+  binary_pod 'SwiftDate', '6.1.0'
+    
+  # Get Colors from hex Values
+  binary_pod 'SwiftHEXColors', '1.3.1'
+
+  binary_pod 'TTGSnackbar', '1.10.3'
+  
+  # RxSwit
+  binary_pod 'RxSwift', '5.1.1'
+  binary_pod 'RxCocoa', '5.1.1'
+  binary_pod 'RxOptional', '4.1.0'
+  binary_pod 'RxAppState', '1.6.0'
+  binary_pod 'RxDataSources', '4.0.1'
+  binary_pod 'NSObject+Rx', '5.1.0'
+  binary_pod 'RxSwiftExt', '5.2.0'
+  binary_pod 'RxViewController', '1.0.0'
+  pod 'RxFlow', '2.5.0'
+  binary_pod 'RxBluetoothKit', '~> 5.0'
+  binary_pod 'RxUserNotifications'
+  binary_pod 'RxCombine', '1.6.0'
+
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
+    end
+  end
+end
+
+inhibit_all_warnings!
+use_frameworks!

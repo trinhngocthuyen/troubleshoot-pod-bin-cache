@@ -1,0 +1,174 @@
+PODS:
+  - AppCenter (4.0.0):
+    - AppCenter/Analytics (= 4.0.0)
+    - AppCenter/Crashes (= 4.0.0)
+  - AppCenter/Analytics (4.0.0):
+    - AppCenter/Core
+  - AppCenter/Core (4.0.0)
+  - AppCenter/Crashes (4.0.0):
+    - AppCenter/Core
+  - CocoaLumberjack/Core (3.6.0)
+  - CocoaLumberjack/Swift (3.6.0):
+    - CocoaLumberjack/Core
+  - Differentiator (4.0.1)
+  - IGListDiffKit (4.0.0)
+  - IGListKit (4.0.0):
+    - IGListDiffKit (= 4.0.0)
+  - LifetimeTracker (1.8.0)
+  - MaterialComponents/Ink (88.0.1):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/private/Color (88.0.1)
+  - MaterialComponents/private/Math (88.0.1)
+  - netfox (1.19.0)
+  - "NSObject+Rx (5.1.0)":
+    - RxSwift (~> 5.1)
+  - Resolver (1.1.4)
+  - RxAppState (1.6.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxBluetoothKit (5.3.0):
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxCombine (1.6.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxFlow (2.5.0):
+    - RxCocoa (>= 5.0.0)
+    - RxSwift (>= 5.0.0)
+  - RxOptional (4.1.0):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - RxSwiftExt (5.2.0):
+    - RxSwiftExt/Core (= 5.2.0)
+    - RxSwiftExt/RxCocoa (= 5.2.0)
+  - RxSwiftExt/Core (5.2.0):
+    - RxSwift (~> 5.0)
+  - RxSwiftExt/RxCocoa (5.2.0):
+    - RxCocoa (~> 5.0)
+    - RxSwiftExt/Core
+  - RxUserNotifications (1.1.0):
+    - RxCocoa
+    - RxSwift
+  - RxViewController (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - SCPageViewController (2.0.14):
+    - SCScrollView (~> 1.1)
+  - SCScrollView (1.1.8)
+  - SimulatorStatusMagic (2.4.1)
+  - SnapKit (5.0.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftDate (6.1.0)
+  - SwiftHEXColors (1.3.1)
+  - SwiftyUserDefaults (4.0.0)
+  - TTGSnackbar (1.10.3)
+
+DEPENDENCIES:
+  - AppCenter (= 4.0.0)
+  - CocoaLumberjack/Swift (= 3.6.0)
+  - IGListKit (= 4.0.0)
+  - LifetimeTracker (= 1.8.0)
+  - MaterialComponents/Ink (= 88.0.1)
+  - netfox
+  - "NSObject+Rx (= 5.1.0)"
+  - Resolver
+  - RxAppState (= 1.6.0)
+  - RxBluetoothKit (~> 5.0)
+  - RxCocoa (= 5.1.1)
+  - RxCombine (= 1.6.0)
+  - RxDataSources (= 4.0.1)
+  - RxFlow (= 2.5.0)
+  - RxOptional (= 4.1.0)
+  - RxSwift (= 5.1.1)
+  - RxSwiftExt (= 5.2.0)
+  - RxUserNotifications
+  - RxViewController (= 1.0.0)
+  - SCPageViewController (= 2.0.14)
+  - SimulatorStatusMagic
+  - SnapKit (~> 5.0.1)
+  - SVProgressHUD (= 2.2.5)
+  - SwiftDate (= 6.1.0)
+  - SwiftHEXColors (= 1.3.1)
+  - SwiftyUserDefaults (= 4.0.0)
+  - TTGSnackbar (= 1.10.3)
+
+SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - AppCenter
+    - CocoaLumberjack
+    - Differentiator
+    - IGListDiffKit
+    - IGListKit
+    - LifetimeTracker
+    - MaterialComponents
+    - netfox
+    - "NSObject+Rx"
+    - Resolver
+    - RxAppState
+    - RxBluetoothKit
+    - RxCocoa
+    - RxCombine
+    - RxDataSources
+    - RxFlow
+    - RxOptional
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+    - RxUserNotifications
+    - RxViewController
+    - SCPageViewController
+    - SCScrollView
+    - SimulatorStatusMagic
+    - SnapKit
+    - SVProgressHUD
+    - SwiftDate
+    - SwiftHEXColors
+    - SwiftyUserDefaults
+    - TTGSnackbar
+
+SPEC CHECKSUMS:
+  AppCenter: 51351e0121e40ba75e28ecb7de5c2e69d480df5e
+  CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
+  IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
+  LifetimeTracker: a7a0fcf35bbf933f83b1c1020e267996d17cdcea
+  MaterialComponents: e98245f7a1a9802fe442fa4d1f3acbb727ece9ec
+  netfox: efeec1d23406df6cd605212f09a40957bb5654eb
+  "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
+  Resolver: 1f4c046255cbadfa97094692e16e940d4329779f
+  RxAppState: b633d7370970ecb80081912ea08a7bf3eb644b4e
+  RxBluetoothKit: 0e781978e8a0df70ac3c611dcf44800b76c69f8a
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxCombine: 81552341b3239e99d5ffea4e48bf11b3f9b638c3
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxFlow: 1beb3ef121e2c58620fd4f8445c855ca1dbfc8c7
+  RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
+  RxUserNotifications: 59e6acaa1e68bea4b2239a719783c888e6636ecf
+  RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
+  SCPageViewController: ff209fcaf544daeffe03db6dd41ee6603f7e2dd0
+  SCScrollView: 247186f377f0b3b8eb4c0a96a2c742b322414f9f
+  SimulatorStatusMagic: 28d4a9d1a500ac7cea0b2b5a43c1c6ddb40ba56c
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
+  SwiftHEXColors: 7cc78ce189ddaff81f2ec1259b6b1dffdcda7643
+  SwiftyUserDefaults: 6a1951df1daa19337862b677dd9a4b9bd4c288cd
+  TTGSnackbar: 97c033600de8a9c8f4a093f25a08543a03946bcc
+
+PODFILE CHECKSUM: da8d0a0976b494ae962c9f6187780d53ae59652f
+
+COCOAPODS: 1.10.0
