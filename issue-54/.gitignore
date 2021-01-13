@@ -1,0 +1,48 @@
+.DS_Store
+xcschememanagement.plist
+Pods
+LibsCache
+.xcworkspacedata
+Example.xcworkspace
+Example.xcodeproj/project.xcworkspace/xcshareddata
+UserInterfaceState.xcuserstate
+xcuserdata/
+
+## Build generated
+build/
+DerivedData/
+
+## Bundle
+.bundle/
+bin/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+*.pyc
+*.idea
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+.build/
+
+# --------------------------------
+# cocoapods-binary-cache
+_Prebuild_delta/
+_Prebuild/
+_Prebuilt/
+# --------------------------------
